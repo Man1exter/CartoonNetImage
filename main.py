@@ -13,7 +13,7 @@ class WeatherApp(QtWidgets.QWidget):
     def init_ui(self):
         self.location_input = QtWidgets.QLineEdit(self)
         self.get_weather_button = QtWidgets.QPushButton("Get Weather 🌞", self)
-        self.get_weather_button.clicked.connect(self.get_weather)
+        self.get_weather_button.clicked.connect(self.get_weather_data)
         self.location_maps = QtWidgets.QPushButton("Location Map ⚡", self)
         self.location_maps.clicked.connect(self.loc_map)
         self.clear_button = QtWidgets.QPushButton("Clear 🌊", self)
@@ -35,16 +35,23 @@ class WeatherApp(QtWidgets.QWidget):
         layout.addWidget(self.quit_button)
         self.setLayout(layout)
 
-    def get_weather(self):
+    def get_weather_data(self,location):
         location = self.location_input.text()
-        #url = "http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=YOUR_APP_ID".format(location)
-        #response = requests.get(url)
-        #data = response.json()
-        #temperature = data["main"]["temp"]
-        #weather = get_weather(location)
-        QtWidgets.QMessageBox.information(self, "Weather", "The current weather in {} is: {}".format(location, "weather"))
-        #return temperature
+        url = "http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=ea9758fb8307e8eb34c3159485114fec".format(location)
+        response = requests.get(url)
+        data = response.json()
         
+        if "main" in data:
+            temperature = data["main"]["temp"]
+            weather_description = data["weather"][0]["description"]
+            self.show_weather_message(location, temperature, weather_description)
+        else:
+            QtWidgets.QMessageBox.warning(self, "Error", "Could not retrieve weather data for the given location.")
+            
+    def show_weather_message(self, location, temperature, weather_description):
+        message = "The current weather in {} is {} with a temperature of {:.1f}°C.".format(location, weather_description, temperature)
+        QtWidgets.QMessageBox.information(self, "Weather", message)
+          
     def loc_map(self):
         pass
 
@@ -58,7 +65,7 @@ if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     weather_app = WeatherApp()
     weather_app.resize(400, 200)
-    weather_app.setStyleSheet("background-color: lightgreen;")
+    weather_app.setStyleSheet("background-color: lightblue;")
     weather_app.show()
     sys.exit(app.exec())
     
