@@ -1,6 +1,6 @@
 import sys
 import requests
-from PySide6 import QtWidgets, QtGui
+from PySide6 import QtWidgets, QtGui, QtCore
 
 class WeatherApp(QtWidgets.QWidget):
     def __init__(self):
@@ -53,12 +53,15 @@ class WeatherApp(QtWidgets.QWidget):
         QtWidgets.QMessageBox.information(self, "Weather", message)
           
     def loc_map(self):
-        pass
+        location = self.location_input.text()
+        url = "https://www.google.com/maps/search/?api=1&query={}".format(location)
+        QtGui.QDesktopServices.openUrl(QtCore.QUrl(url))
 
     def clear(self):
         self.location_input.clear()
 
     def quit(self):
+        QtWidgets.QMessageBox.information(self, "Weather", "See You next time!")
         QtWidgets.QApplication.quit()
 
 if __name__ == "__main__":
