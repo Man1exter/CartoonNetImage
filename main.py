@@ -37,7 +37,7 @@ class WeatherApp(QtWidgets.QWidget):
 
     def get_weather_data(self,location):
         location = self.location_input.text()
-        url = "http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=ea9758fb8307e8eb34c3159485114fec".format(location)
+        url = "http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=c".format(location)
         response = requests.get(url)
         data = response.json()
         
