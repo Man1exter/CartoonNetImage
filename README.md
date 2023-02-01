@@ -40,23 +40,23 @@ Using the Pyside6 module with Python
 
 Example:
 
-![ActionI](C:\Users\mperz\Desktop\CartoonNetImage\jpgDirect\example.PNG)
+![ActionI](https://github.com/Man1exter/CartoonNetImage/blob/27a228b8826a4afc636e64b5ef8a6ed34388b552/jpgDirect/example.PNG)
 
 Panel:
 
-![ActionII](C:\Users\mperz\Desktop\CartoonNetImage\jpgDirect\panel.PNG)
+![ActionII](https://github.com/Man1exter/CartoonNetImage/blob/27a228b8826a4afc636e64b5ef8a6ed34388b552/jpgDirect/panel.PNG)
 
 Result I:
 
-![ActionIII](C:\Users\mperz\Desktop\CartoonNetImage\jpgDirect\result1.PNG)
+![ActionIII](https://github.com/Man1exter/CartoonNetImage/blob/27a228b8826a4afc636e64b5ef8a6ed34388b552/jpgDirect/result1.PNG)
 
 Result II:
 
-![ActionIV](C:\Users\mperz\Desktop\CartoonNetImage\jpgDirect\result2.PNG)
+![ActionIV](https://github.com/Man1exter/CartoonNetImage/blob/27a228b8826a4afc636e64b5ef8a6ed34388b552/jpgDirect/result2.PNG)
 
 Result III:
 
-![ActionV](C:\Users\mperz\Desktop\CartoonNetImage\jpgDirect\result3.PNG)
+![ActionV](https://github.com/Man1exter/CartoonNetImage/blob/27a228b8826a4afc636e64b5ef8a6ed34388b552/jpgDirect/result3.PNG)
 ## Feedback
 
 Each tip is valuable to me and allows me to explore more possibilities.
