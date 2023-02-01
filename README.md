@@ -40,23 +40,23 @@ Using the Pyside6 module with Python
 
 Example:
 
-![ActionI](jpg\example.PNG)
+![ActionI](C:\Users\mperz\Desktop\CartoonNetImage\jpgDirect\example.PNG)
 
 Panel:
 
-![ActionII](C:\Users\mperz\Desktop\CartoonNetImage\jpg\panel.PNG)
+![ActionII](C:\Users\mperz\Desktop\CartoonNetImage\jpgDirect\panel.PNG)
 
 Result I:
 
-![ActionIII](C:\Users\mperz\Desktop\CartoonNetImage\jpg\result1.PNG)
+![ActionIII](C:\Users\mperz\Desktop\CartoonNetImage\jpgDirect\result1.PNG)
 
 Result II:
 
-![ActionIV](C:\Users\mperz\Desktop\CartoonNetImage\jpg\result2.PNG)
+![ActionIV](C:\Users\mperz\Desktop\CartoonNetImage\jpgDirect\result2.PNG)
 
 Result III:
 
-![ActionV](C:\Users\mperz\Desktop\CartoonNetImage\jpg\result3.PNG)
+![ActionV](C:\Users\mperz\Desktop\CartoonNetImage\jpgDirect\result3.PNG)
 ## Feedback
 
 Each tip is valuable to me and allows me to explore more possibilities.
