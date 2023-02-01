@@ -40,7 +40,7 @@ Using the Pyside6 module with Python
 
 Example:
 
-C:\Users\mperz\Desktop\CartoonNetImage\jpg\example.PNG
+https://github.com/Man1exter/CartoonNetImage/blob/687c03b2594f21f8e3d08756065073e99656f185/jpg/example.PNG
 
 Panel:
 
